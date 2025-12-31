@@ -1281,7 +1281,7 @@ const App: React.FC = () => {
                 if (g.id === goalId) {
                     const newSavedAmount = g.savedAmount + amount;
                     const newHistory: SavingTransaction = { amount, timestamp: transactionTimestamp };
-                    return { ...g, savedAmount: newSavedAmount, history: [...g.history, newHistory], isCompleted: !g.isInfinite && g.targetAmount ? newSavedAmount >= g.targetAmount : false; };
+                    return { ...g, savedAmount: newSavedAmount, history: [...g.history, newHistory], isCompleted: !g.isInfinite && g.targetAmount ? newSavedAmount >= g.targetAmount : false };
                 }
                 return g;
             });
