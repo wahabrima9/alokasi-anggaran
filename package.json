@@ -9,12 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "react": "^19.2.0",
-    "recharts": "^3.3.0",
-    "react-dom": "^19.2.0",
-    "@google/genai": "^1.28.0",
-    "jspdf": "latest",
-    "jspdf-autotable": "latest"
+    "react": "^19.2.3",
+    "recharts": "^3.6.0",
+    "@google/genai": "^1.34.0",
+    "jspdf": "^3.0.4",
+    "react-dom": "^19.2.3",
+    "jspdf-autotable": "^5.0.2"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",

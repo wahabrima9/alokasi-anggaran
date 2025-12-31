@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect, useCallback, useRef, useMemo } from 'react';
-import { GoogleGenAI, Type, Chat } from '@google/genai';
+import { GoogleGenAI, Type } from '@google/genai';
 import type { AppState, Budget, Transaction, FundTransaction, GlobalTransaction, ScannedItem, SavingsGoal, SavingTransaction, Achievement, Asset, WishlistItem, Subscription, ShopItem, CustomTheme, ShoppingItem, DebtItem, DebtRecord } from './types';
 import Dashboard from './components/Dashboard';
 import Reports from './components/Reports';
@@ -448,7 +448,7 @@ const App: React.FC = () => {
     const [adviceError, setAdviceError] = useState<string | null>(null);
     const [aiDashboardInsight, setAiDashboardInsight] = useState<string>('');
     const [isFetchingDashboardInsight, setIsFetchingDashboardInsight] = useState<boolean>(false);
-    const [aiChatSession, setAiChatSession] = useState<Chat | null>(null);
+    const [aiChatSession, setAiChatSession] = useState<any>(null);
     const [aiChatHistory, setAiChatHistory] = useState<{ role: 'user' | 'model'; text: string }[]>([]);
     const [isAiChatLoading, setIsAiChatLoading] = useState<boolean>(false);
     const [aiChatError, setAiChatError] = useState<string | null>(null);
